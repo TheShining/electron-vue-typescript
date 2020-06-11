@@ -1,19 +1,25 @@
 # electron-vue-typescript
 
-## Project setup
+一款快速开发应用的模板 使用[electron](https://github.com/electron/electron)    [vue](https://github.com/vuejs/vue)   [typescript](https://github.com/microsoft/TypeScript)  构建
+
+#### 下载
+
 ```
-npm install
+git clone librarySite
 ```
 
-### Compiles and hot-reloads for development
+#### 安装依赖
+
 ```
-npm run serve
+npm install 
 ```
 
-### Compiles and minifies for production
+### 启动
 ```
-npm run build
+npm run electron:serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 打包
+```
+npm run electron:serve
+```
