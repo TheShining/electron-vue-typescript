@@ -5,7 +5,7 @@
 #### 下载
 
 ```
-git clone librarySite
+git clone git@github.com:TheShining/electron-vue-typescript.git
 ```
 
 #### 安装依赖
@@ -21,5 +21,6 @@ npm run electron:serve
 
 ### 打包
 ```
-npm run electron:serve
+npm run electron:build
 ```
+

@@ -1,5 +1,4 @@
 'use strict';
-
 import { app, protocol, BrowserWindow } from 'electron';
 import {
     createProtocol,
@@ -22,7 +21,8 @@ function createWindow() {
         webPreferences: {
             // Use pluginOptions.nodeIntegration, leave this alone
             // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
-            nodeIntegration: Boolean(process.env.ELECTRON_NODE_INTEGRATION),
+            //允许在渲染线程中使用node
+            nodeIntegration: true,
         },
     });
 
