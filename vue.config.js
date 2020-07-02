@@ -5,6 +5,11 @@ function resolve(dir) {
     return path.join(__dirname, dir);
 }
 module.exports = {
+    //解决electron fs.existsSync is not a function 报错 webpack编译错误
+    configureWebpack: {
+        target: 'electron-renderer',
+    },
+
     // 部署应用包时的基本URL，默认为'/'
     // 假设你的应用将会部署在域名的根部,比如，https://www.vue-cli.com/,则设置为"/"
     // 如果你的应用是部署在一个子路径下，那么你需要在这里指定子路径，比如，如果你部署在 https://www.my-vue.com/my-app/; 那么将这个值改为 “/my-app/”
