@@ -4,6 +4,11 @@ import {
     createProtocol,
     /* installVueDevtools */
 } from 'vue-cli-plugin-electron-builder/lib';
+import log from 'electron-log';
+
+//electron-log替换console 健全log系统 运行时log记录
+//logfilepath: %USERPROFILE%\AppData\Roaming\{app name}\logs\{process type}.log
+Object.assign(console, log.functions);
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 // Keep a global reference of the window object, if you don't, the window will
