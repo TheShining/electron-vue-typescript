@@ -117,6 +117,8 @@ module.exports = {
         },
         electronBuilder: {
             mainProcessFile: 'src/main/background.ts',
+            //调整 electron 热更新代码 监控目录
+            mainProcessWatch: ['src/main'],
 
             // List native deps here if they don't work
             // externals: ['my-native-dep'],
